@@ -15,6 +15,7 @@ namespace PraktikaHotelsMVC.Controllers
             ViewBag.Cities = CitiesCollection.listCities;
             return View();
         }
+
         public ActionResult Details(int id=0)
         {
             ViewBag.Cities = CitiesCollection.listCities;
@@ -29,16 +30,17 @@ namespace PraktikaHotelsMVC.Controllers
             }
         }
 
-        /*public ActionResult Cities(string name)
+        public ActionResult Cities(string name)
         {
             ViewBag.Cities = CitiesCollection.listCities;
-            ViewBag.HotelName = name;
+                      return View();
+        }
+
+        public ActionResult Hotels(string hname)
+        {
+            ViewBag.Cities = CitiesCollection.listCities;
+            ViewBag.HotelName = hname;
             return View();
         }
-        public ActionResult Hotels()
-        {
-            ViewBag.Cities = CitiesCollection.listCities;
-            return View();
-        }*/
     }
 }

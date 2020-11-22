@@ -5,3 +5,33 @@
 
 <h2>Hotels</h2>
 
+<h2>Отели города </h2>
+
+<div style="width: 500px; float:left;">
+    <table style="border: 1px solid black; width: 500px">
+
+        <th>
+        <tr>
+            <td>Hotel</td>
+            <td>Adress</td>
+            <td>Srervices </td>
+            <td>Подробнее </td>
+        </tr>
+        </th>
+        <tbody>
+
+
+            <tr>
+                <td>01_Name</td>
+                <td>01_Aadress</td>
+                <td>01_Servises</td>
+                <td>@Html.ActionLink("Подробнее", "Details", "Cities", new { area = "" }, new { @class = "navbar-brand" }) </td>
+            </tr>
+
+        </tbody>
+
+    </table>
+    <div>Всего отелей в городе: </div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+<div style="clear:both"></div>
